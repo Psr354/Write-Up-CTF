@@ -1,6 +1,6 @@
 ## Challenge
 
-![chall](the_numbers.png)
+![chall](chall.png)
 
 
 ## Deskription
