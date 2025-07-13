@@ -4,7 +4,7 @@
 
 
 ## Deskription
-The numbers... what do they mean?
+The [numbers](the_numbers.png)... what do they mean?
 
 
 ## Solving
