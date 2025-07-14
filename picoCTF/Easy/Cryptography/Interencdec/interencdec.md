@@ -38,6 +38,9 @@ Output:
 b'd3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrXzc4MjUwaG1qfQ=='
 ```
 
+
+
+Input:
 ```bash
 echo "d3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrXzc4MjUwaG1qfQ==" | base64 -d
 ```
@@ -45,6 +48,11 @@ Output:
 ```
 wpjvJAM{jhlzhy_k3jy9wa3k_78250hmj}
 ```
+
+### 3. Recognizing Caesar Cipher
+
+The text looks like a Caesar cipher it's all letters, no weird symbols, and the spacing looks like real words, but nothing makes sense. This usually means each letter was shifted by a fixed amount in the alphabet To decode it, you can use the online tools [cyberchef](https://gchq.github.io/CyberChef/):
+
 ---
 
 ### 4. The Flag
@@ -75,8 +83,8 @@ picoCTF{caesar_d3cr9pt3d_78250afc}
 
 ## Conclusion
 
-This challenge required basic recognition of encoding schemes. The flag was simply Base64-encoded and did not require any Caesar cipher decryption, despite the hint in the flag text. Understanding common encoding and cipher techniques is essential in CTF cryptography challenges.
+This challenge required decoding two layers: first, the text was Base64-encoded. After decoding it, the result was still unreadable because it was encrypted using a Caesar cipher. Once the correct shift was applied, the flag was revealed. Understanding both encoding (like Base64) and classic ciphers (like Caesar) is key in CTF crypto challenges.
 
 ---
 
-Let me know if you'd like the write-up in another format or need more detail on a specific part!
+
